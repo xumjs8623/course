@@ -1,0 +1,42 @@
+{
+  "name": "course-lat-long",
+  "version": "1.0.0",
+  "private": false,
+  "scripts": {
+    "dev": "vue-cli-service serve",
+    "build1": "vue-cli-service build",
+    "build": "vue-cli-service build --target lib --name index 'src/lib/index.js'",
+    "lint": "vue-cli-service lint"
+  },
+  "keywords": [
+    "element",
+    "vue",
+    "vue.js",
+    "component",
+    "components",
+    "ui",
+    "framework"
+  ],
+  "main": "dist/index.umd.min.js",
+  "dependencies": {
+    "element-ui": "^2.4.5",
+    "vue": "^2.5.16"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.0.0-rc.10",
+    "@vue/cli-plugin-eslint": "^3.0.0-rc.10",
+    "@vue/cli-service": "^3.0.0-rc.10",
+    "axios": "^0.18.0",
+    "node-sass": "^4.9.0",
+    "sass-loader": "^7.0.1",
+    "vue-router": "^3.0.1",
+    "vue-template-compiler": "^2.5.16",
+    "vuex": "^3.0.1"
+  },
+  "author": "MJ",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xumjs8623/course"
+  }
+}
