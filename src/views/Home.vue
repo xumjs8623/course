@@ -8,8 +8,8 @@ import course from '../lib'
 export default {
   data () {
     return {
-      startPosition: [115.229415,31.210068],
-      endPosition: [116.569747,29.216513],
+      startPosition: [120.892164,29.895426],
+      endPosition: [120.884481,29.893088],
       result: ''
     }
   },

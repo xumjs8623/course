@@ -9,23 +9,6 @@ let course = (startPosition, endPosition) => {
   }
   let start = startPosition
   let end = endPosition
-  let returnData = 0
-  // 右上象限
-  if (start[0] < end[0] && start[1] < end[1]) {
-    returnData = 0
-  }
-  // 右下
-  if (start[0] < end[0] && start[1] > end[1]) {
-    returnData = 90
-  }
-  // 左下
-  if (start[0] > end[0] && start[1] > end[1]) {
-    returnData = 180
-  }
-  // 左上
-  if (start[0] > end[0] && start[1] < end[1]) {
-    returnData = 270
-  }
   // 直角的边长
   var x = Math.abs(start[0] - end[0]);
   var y = Math.abs(start[1] - end[1]);
@@ -37,6 +20,25 @@ let course = (startPosition, endPosition) => {
   var radina = Math.acos(cos);
   // 角度
   var angle = 180 / (Math.PI / radina);
-  return returnData + angle;
+  // 初始值
+  let returnData = 0
+  // 右上象限
+  if (start[0] < end[0] && start[1] < end[1]) {
+    returnData = angle
+  }
+  // 右下
+  if (start[0] < end[0] && start[1] > end[1]) {
+    returnData = 180 - angle
+  }
+  // 左下
+  if (start[0] > end[0] && start[1] > end[1]) {
+    returnData = 180 + angle
+  }
+  // 左上
+  if (start[0] > end[0] && start[1] < end[1]) {
+    returnData = 360 - angle
+  }
+  
+  return returnData;
 }
 export default course
