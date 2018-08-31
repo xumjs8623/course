@@ -23,19 +23,19 @@ let course = (startPosition, endPosition) => {
   // 初始值
   let returnData = 0
   // 右上象限
-  if (start[0] < end[0] && start[1] < end[1]) {
+  if (start[0] <= end[0] && start[1] <= end[1]) {
     returnData = angle
   }
   // 右下
-  if (start[0] < end[0] && start[1] > end[1]) {
+  if (start[0] <= end[0] && start[1] >= end[1]) {
     returnData = 180 - angle
   }
   // 左下
-  if (start[0] > end[0] && start[1] > end[1]) {
+  if (start[0] >= end[0] && start[1] >= end[1]) {
     returnData = 180 + angle
   }
   // 左上
-  if (start[0] > end[0] && start[1] < end[1]) {
+  if (start[0] >= end[0] && start[1] <= end[1]) {
     returnData = 360 - angle
   }
   
