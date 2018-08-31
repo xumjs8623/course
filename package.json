@@ -1,6 +1,6 @@
 {
   "name": "course-lat-long",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "private": false,
   "scripts": {
     "dev": "vue-cli-service serve",
